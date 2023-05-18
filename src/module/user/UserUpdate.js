@@ -108,7 +108,7 @@ const UserUpdate = () => {
         username: slugify(values.username || values.fullname, { lower: true }),
       });
       toast.success("Update user successfully");
-      navigate("/manage/profile");
+      navigate("/manage/user");
     } catch (error) {
       toast.error(error);
     }
