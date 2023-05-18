@@ -1,0 +1,14 @@
+export { default as AuthenPage } from "./AuthenPage";
+export { default as BlogPage } from "./BlogPage";
+export { default as ContactPage } from "./ContactPage";
+export { default as DashboardPage } from "./DashboardPage";
+export { default as HomePage } from "./HomePage";
+export { default as NotFoundPage } from "./NotFoundPage";
+export { default as SignInPage } from "./SignInPage";
+export { default as SignUpPage } from "./SignUpPage";
+export { default as PostDetailsPage } from "./PostDetailsPage";
+export { default as CategoryPage } from "./CategoryPage";
+export { default as AuthorPage } from "./AuthorPage";
+export { default as FeaturePage } from "./FeaturePage";
+export { default as NewestPage } from "./NewestPage";
+export { default as ProfilePage } from "./ProfilePage";

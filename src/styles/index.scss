@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "reset";
+@import "content";
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.heading-h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4ca1af;
+}
+.heading-h3 {
+  color: #395e71;
+  opacity: 0.7;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.grid-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+  margin-top: 2rem;
+}
+
+// .quill {
+//   position: relative;
+//   .ql-toolbar {
+//     position: -webkit-sticky;
+//     top: 0;
+//     background-color: white;
+//     z-index: 10;
+//   }
+// }
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.overlay {
+  background-color: rgba(44, 62, 80, 0.2);
+}
