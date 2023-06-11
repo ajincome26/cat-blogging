@@ -46,7 +46,7 @@ const listSidebar = [
 ];
 
 const SidebarStyle = styled.div`
-  width: 300px;
+  width: 100%;
   height: 100%;
   padding: 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -94,7 +94,6 @@ const SidebarStyle = styled.div`
     }
   }
   @media (min-width: 375px) {
-    width: 100%;
     .sidebar {
       &-header {
         display: flex;
@@ -110,7 +109,6 @@ const SidebarStyle = styled.div`
     }
   }
   @media (min-width: 768px) {
-    width: 100%;
     .sidebar {
       &-header {
         display: flex;

@@ -28,6 +28,7 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    overflow: hidden;
     &-left {
       display: flex;
       align-items: center;
@@ -100,11 +101,13 @@ const Header = () => {
           <NavLink to="/">
             <img src={logo} alt="logo" className="header-logo" />
           </NavLink>
-          {menuLink.map((item) => (
-            <NavLink key={item.id} to={item.to} className="header-item">
-              {item.title}
-            </NavLink>
-          ))}
+          <div className="flex items-center gap-5 min-[414px]:gap-8 min-[1440px]:gap-12">
+            {menuLink.map((item) => (
+              <NavLink key={item.id} to={item.to} className="header-item">
+                {item.title}
+              </NavLink>
+            ))}
+          </div>
         </div>
         <div className="header-right">
           {!userInfo ? (
