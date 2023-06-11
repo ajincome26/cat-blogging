@@ -94,9 +94,9 @@ const HomeBannerStyle = styled.div`
       &-right {
         height: 520px;
       }
-    }
-    .button {
-      margin: 0;
+      &-left {
+        text-align: left;
+      }
     }
   }
 `;
