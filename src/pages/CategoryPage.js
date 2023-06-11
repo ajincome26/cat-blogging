@@ -54,9 +54,13 @@ const CategoryPage = () => {
       <div className="mb-10 text-2xl font-bold text-primary">
         {`Category : ${categoryName}`}
       </div>
-      <div className="grid grid-cols-4 gap-x-5 gap-y-7">
+      <div className="gap-x-5 gap-y-7 block md:grid md:grid-cols-2 lg:grid-cols-3 min-[1440px]:grid-cols-4">
         {posts.length > 0 &&
-          posts.map((item) => <PostRelatedItem key={item.title} post={item} />)}
+          posts.map((item) => (
+            <div className="flex flex-col mb-5 md:mb-0">
+              <PostRelatedItem key={item.title} post={item} />
+            </div>
+          ))}
       </div>
     </div>
   );

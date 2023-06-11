@@ -14,12 +14,10 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-
-.flex-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 .heading-h1 {
@@ -39,16 +37,25 @@ body {
   gap: 2rem 3rem;
   margin-top: 2rem;
 }
-
-// .quill {
-//   position: relative;
-//   .ql-toolbar {
-//     position: -webkit-sticky;
-//     top: 0;
-//     background-color: white;
-//     z-index: 10;
-//   }
-// }
+@media only screen and (min-width: 375px) {
+  .grid-field {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .grid-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .grid-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+  }
+}
 
 .truncate-3 {
   display: -webkit-box;

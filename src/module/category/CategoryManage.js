@@ -124,17 +124,19 @@ const CategoryManage = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="items-center justify-between block md:flex">
         <CategoryHeading title="Categories" desc="Manage your category" />
-        <ButtonDiv
-          to="/manage/add-category"
-          className="hover:opacity-80"
-          bgColor="#4ade80"
-          textColor="#14532d"
-          weight="600"
-        >
-          Create Category
-        </ButtonDiv>
+        <div className="mt-8 text-right md:mt-0">
+          <ButtonDiv
+            to="/manage/add-category"
+            className="inline-block hover:opacity-80"
+            bgColor="#4ade80"
+            textColor="#14532d"
+            weight="600"
+          >
+            Create Category
+          </ButtonDiv>
+        </div>
       </div>
       <InputSearch
         handleFilter={handleFilter}

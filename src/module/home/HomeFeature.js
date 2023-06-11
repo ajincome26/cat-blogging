@@ -15,6 +15,24 @@ const HomeFeatureStyle = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
   }
+  @media only screen and (min-width: 375px) {
+    .grid-layout {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .grid-layout {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .grid-layout {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+  }
 `;
 
 const HomeFeature = () => {

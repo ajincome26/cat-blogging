@@ -3,7 +3,7 @@ import styled from "styled-components";
 const TableStyles = styled.div`
   background-color: white;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: scroll;
   table {
     width: 100%;
   }

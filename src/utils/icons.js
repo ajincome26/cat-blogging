@@ -7,7 +7,7 @@ import {
   AiOutlineTwitter,
   AiFillGithub,
 } from "react-icons/ai";
-import { BiSearch, BiLogOut } from "react-icons/bi";
+import { BiSearch, BiLogOut, BiMenu } from "react-icons/bi";
 import { RxDashboard } from "react-icons/rx";
 import { BsBook, BsCheck } from "react-icons/bs";
 import { MdOutlineTopic } from "react-icons/md";
@@ -33,4 +33,5 @@ export const icons = {
   FaFacebookF,
   AiOutlineTwitter,
   AiFillGithub,
+  BiMenu,
 };

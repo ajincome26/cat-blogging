@@ -15,6 +15,27 @@ const DashboardLayoutStyle = styled.div`
       display: flex;
     }
   }
+  @media (min-width: 375px) {
+    .dashboard {
+      &-content {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .dashboard {
+      &-content {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .dashboard {
+      &-content {
+        display: flex;
+      }
+    }
+  }
 `;
 
 const DashboardLayout = () => {
@@ -25,7 +46,7 @@ const DashboardLayout = () => {
       <DashboardHeader />
       <div className="dashboard-content">
         <Sidebar />
-        <div className="p-[2rem] w-full">
+        <div className="w-full overflow-x-auto md:py-7 md:px-3 xl:p-5 min-[375px]:p-5">
           <Outlet />
         </div>
       </div>

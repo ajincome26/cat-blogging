@@ -15,7 +15,6 @@ const PostNewestItemStyle = styled.div`
   padding-bottom: 1rem;
 
   .item-image {
-    width: 180px;
     height: 130px;
     flex-shrink: 0;
     cursor: pointer;
@@ -25,6 +24,16 @@ const PostNewestItemStyle = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+  @media only screen and (min-width: 375px) {
+    .item-image {
+      width: 150px;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .item-image {
+      width: 180px;
+    }
   }
 `;
 

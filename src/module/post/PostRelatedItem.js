@@ -8,7 +8,7 @@ import PostTopic from "./PostTopic";
 const PostRelatedItem = ({ post }) => {
   if (!post) return null;
   return (
-    <div className="flex flex-col related-item">
+    <div className="flex flex-col related-item gap-[1rem] flex-1">
       <div className="related-image h-[250px] cursor-pointer">
         <PostImage
           className="related-image"
@@ -16,7 +16,7 @@ const PostRelatedItem = ({ post }) => {
           to={`/posts/${post?.slug}/${post?.id}`}
         />
       </div>
-      <div className="related-content flex-layout mt-[1rem] flex-1">
+      <div className="related-content flex flex-col items-start gap-[10px] flex-1">
         <PostTopic size="13px" bgColor="#e0e7f0" to={post.category?.slug}>
           {post?.category.name}
         </PostTopic>

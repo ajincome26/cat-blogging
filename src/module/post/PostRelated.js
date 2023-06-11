@@ -7,6 +7,15 @@ const PostRelatedStyle = styled.div`
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 1rem;
   margin: 4rem 0 2rem;
+  @media only screen and (min-width: 375px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 `;
 
 const PostRelated = ({ data }) => {

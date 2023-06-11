@@ -173,7 +173,7 @@ const UserUpdate = () => {
         {/* Status */}
         <Field>
           <Label>Status</Label>
-          <div className="flex items-center gap-10">
+          <div className="flex flex-wrap items-center gap-10">
             <Radio
               control={control}
               name="status"
@@ -200,7 +200,7 @@ const UserUpdate = () => {
         {/* Roles */}
         <Field>
           <Label>Role</Label>
-          <div className="flex items-center gap-10">
+          <div className="flex flex-wrap items-center gap-10">
             <Radio
               control={control}
               name="role"

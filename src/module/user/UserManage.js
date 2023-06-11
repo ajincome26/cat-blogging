@@ -157,17 +157,19 @@ const UserManage = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="items-center justify-between block md:flex">
         <CategoryHeading title="Users" desc="Manage all users of the system" />
-        <ButtonDiv
-          to="/manage/add-user"
-          className="hover:opacity-80"
-          bgColor="#4ade80"
-          textColor="#14532d"
-          weight="600"
-        >
-          Create User
-        </ButtonDiv>
+        <div className="mt-8 text-right md:mt-0">
+          <ButtonDiv
+            to="/manage/add-user"
+            className="inline-block hover:opacity-80"
+            bgColor="#4ade80"
+            textColor="#14532d"
+            weight="600"
+          >
+            Create User
+          </ButtonDiv>
+        </div>
       </div>
       <InputSearch
         handleFilter={handleFilter}

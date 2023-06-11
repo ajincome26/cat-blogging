@@ -151,7 +151,7 @@ const PostManage = () => {
   };
 
   return (
-    <div>
+    <>
       <CategoryHeading title="Posts" desc="Manage all posts of the system" />
       <div className="flex items-center gap-2 my-[2rem] flex-row-reverse">
         <InputSearch
@@ -159,7 +159,7 @@ const PostManage = () => {
           placeholder="Search post ..."
           className="h-[48px]"
         />
-        <Dropdown className="max-w-[200px]">
+        <Dropdown className="max-w-[200px] min-[315px]:hidden min-[414px]:inline-block">
           <Select
             label="Category"
             bgSelect="bg-white"
@@ -237,7 +237,7 @@ const PostManage = () => {
       {!loading && posts.length < size && (
         <ButtonLoadMore handleLoadmore={handleLoadmore} />
       )}
-    </div>
+    </>
   );
 };
 

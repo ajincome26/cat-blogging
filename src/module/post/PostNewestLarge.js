@@ -11,6 +11,7 @@ const PostNewestLargeStyle = styled.div`
     flex-basis: 50%;
   }
   .newest-image {
+    width: 100%;
     height: 400px;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -26,7 +27,7 @@ const PostNewestLarge = ({ data }) => {
         src={data.url}
         to={`/posts/${data.slug}/${data.id}`}
       />
-      <div className="newest-content flex-layout">
+      <div className="newest-content flex flex-col items-start gap-[10px]">
         <PostTopic size="13px" bgColor="#e0e7f0" to={`${data.category.slug}`}>
           {data.category.name}
         </PostTopic>

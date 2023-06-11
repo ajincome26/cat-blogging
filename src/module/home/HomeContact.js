@@ -65,14 +65,17 @@ const HomeContact = () => {
   };
   return (
     <div>
-      <div className="relative w-full h-[600px] shadow-2xl overlay">
+      {/* h-[600px] */}
+      <div className="relative w-full h-[800px] md:h-[700px] xl:h-[600px] shadow-2xl overlay">
         <img
           srcSet="./contact-svg.svg"
           alt="banner-item"
           className="object-cover object-top w-full h-full"
         />
-        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] shadow-md rounded-xl overflow-hidden w-[70%] h-[80%] flex">
-          <div className="relative h-full basis-1/3">
+        {/* top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[70%] h-[80%]*/}
+        <div className="absolute top-0 left-0 flex flex-col w-full h-full overflow-hidden shadow-md rounded-xl xl:top-[50%] xl:left-[50%] xl:translate-x-[-50%] xl:translate-y-[-50%] xl:w-[70%] xl:h-[80%] xl:flex-row">
+          {/* h-full */}
+          <div className="relative h-[200px] xl:h-full basis-1/3">
             <div className="absolute inset-0 bg-gradient-to-t from-[#2c3e50]"></div>
             <img
               src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"

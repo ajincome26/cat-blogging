@@ -34,6 +34,16 @@ const PostAddNewStyle = styled.div`
   .post {
     padding: 2rem;
   }
+  @media (min-width: 375px) {
+    .post {
+      padding: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .post {
+      padding: 1rem;
+    }
+  }
 `;
 
 const schema = yup
@@ -195,7 +205,7 @@ const PostAddNew = () => {
           {/* Status */}
           <Field>
             <Label>Status</Label>
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-10 min-[375px]:flex-wrap">
               <Radio
                 control={control}
                 name="status"

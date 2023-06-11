@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.0.1",
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +23,7 @@
     "react-loader-spinner": "^5.3.4",
     "react-paginate": "^8.2.0",
     "react-quill": "^2.0.0",
+    "react-redux": "^8.0.7",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-toastify": "^8.2.0",

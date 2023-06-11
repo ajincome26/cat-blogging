@@ -17,8 +17,6 @@ const HomeNewestStyle = styled.div`
     gap: 2rem;
     &-right {
       flex-basis: 50%;
-    }
-    &-right {
       padding: 20px;
       background-color: ${(props) => props.theme.fourth};
       border-radius: 10px;
@@ -46,6 +44,37 @@ const HomeNewestStyle = styled.div`
   }
   .post-topic {
     cursor: pointer;
+  }
+  @media only screen and (min-width: 375px) {
+    .newest {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+      &-right {
+        padding: 5px;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .newest {
+      display: flex;
+      align-items: stretch;
+      &-right {
+        padding: 10px;
+        .item-content {
+          width: 170px;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .newest {
+      &-right {
+        .item-content {
+          width: auto;
+        }
+      }
+    }
   }
 `;
 

@@ -88,6 +88,66 @@ const SidebarStyle = styled.div`
       }
     }
   }
+  @media (min-width: 375px) {
+    width: 100%;
+    .sidebar {
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+      &-item {
+        padding: 1rem;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+    .sidebar {
+      &-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 2rem;
+        box-shadow: none;
+      }
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+      &-item {
+        padding: 1rem;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    width: 300px;
+    .sidebar {
+      &-header {
+        justify-content: left;
+      }
+      &-content {
+        display: block;
+        gap: 15px;
+      }
+      &-item {
+        padding: 1rem;
+      }
+    }
+  }
 `;
 
 const Sidebar = () => {

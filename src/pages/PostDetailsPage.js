@@ -62,8 +62,8 @@ const PostDetailsPage = () => {
   if (!postId) return <NotFoundPage />;
   return (
     <>
-      <div className="container pt-6">
-        <div className="flex items-center gap-10 mb-14">
+      <div className="container">
+        <div className="flex items-center gap-10 mb-14 min-[375px]:flex-col md:flex-row">
           <div className="h-[450px] overflow-hidden rounded-2xl basis-1/2">
             <img src={post.url} alt="" className="object-cover w-full h-full" />
           </div>
@@ -112,11 +112,9 @@ const PostDetailsPage = () => {
         </div>
       </div>
       {postsRelated.length > 0 && (
-        <div className="mx-auto max-w-[1280px]">
-          <div className="mb-10 text-2xl font-bold text-primary">
-            Post Related
-          </div>
-          <div className="grid grid-cols-4 gap-5">
+        <div className="container">
+          <div className="text-2xl font-bold text-primary">Post Related</div>
+          <div className="grid grid-cols-2 gap-5 mt-10 mb-5 md:grid md:grid-cols-3 lg:grid-cols-4 min-[375px]:block">
             {postsRelated.length > 0 &&
               postsRelated.map((item) => (
                 <PostRelatedItem key={item.title} post={item} />
