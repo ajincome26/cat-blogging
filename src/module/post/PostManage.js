@@ -159,7 +159,7 @@ const PostManage = () => {
           placeholder="Search post ..."
           className="h-[48px]"
         />
-        <Dropdown className="max-w-[200px] min-[315px]:hidden min-[414px]:inline-block">
+        <Dropdown className="max-w-[200px] hidden min-[414px]:inline-block">
           <Select
             label="Category"
             bgSelect="bg-white"

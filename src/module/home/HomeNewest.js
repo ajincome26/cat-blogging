@@ -12,12 +12,12 @@ import styled from "styled-components";
 const HomeNewestStyle = styled.div`
   margin-top: 3rem;
   .newest {
-    display: flex;
-    align-items: stretch;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
     &-right {
       flex-basis: 50%;
-      padding: 20px;
+      padding: 5px;
       background-color: ${(props) => props.theme.fourth};
       border-radius: 10px;
       height: 100%;
@@ -47,9 +47,6 @@ const HomeNewestStyle = styled.div`
   }
   @media only screen and (min-width: 375px) {
     .newest {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 1rem;
       &-right {
         padding: 5px;
       }

@@ -13,10 +13,16 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 8px;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .container {
     padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 0;
   }
 }
 
@@ -33,14 +39,8 @@ body {
 }
 .grid-field {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 3rem;
+  grid-template-columns: repeat(1, 1fr);
   margin-top: 2rem;
-}
-@media only screen and (min-width: 375px) {
-  .grid-field {
-    display: block;
-  }
 }
 @media only screen and (min-width: 768px) {
   .grid-field {

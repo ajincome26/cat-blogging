@@ -8,6 +8,7 @@ import { formatDateV1 } from "utils/constants";
 
 const PostNewestItemStyle = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid #ccc;
@@ -26,6 +27,7 @@ const PostNewestItemStyle = styled.div`
     gap: 10px;
   }
   @media only screen and (min-width: 375px) {
+    flex-direction: row;
     .item-image {
       width: 150px;
     }

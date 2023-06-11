@@ -220,7 +220,7 @@ const PostUpdate = () => {
         {/* Status */}
         <Field>
           <Label>Status</Label>
-          <div className="flex items-center gap-10 min-[375px]:flex-wrap">
+          <div className="flex flex-wrap items-center gap-10">
             <Radio
               control={control}
               name="status"

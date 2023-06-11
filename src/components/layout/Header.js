@@ -31,7 +31,7 @@ const HeaderStyle = styled.header`
     &-left {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 10px;
     }
     &-logo {
       margin-right: 10px;
@@ -49,6 +49,13 @@ const HeaderStyle = styled.header`
   .dashboard-info,
   .dashboard-button {
     display: none;
+  }
+  @media only screen and (min-width: 375px) {
+    .header {
+      &-left {
+        gap: 40px;
+      }
+    }
   }
   @media only screen and (min-width: 768px) {
     .dashboard-info,
@@ -101,15 +108,17 @@ const Header = () => {
         </div>
         <div className="header-right">
           {!userInfo ? (
-            <Button
-              width="150px"
-              height="46px"
-              padding="12px 30px"
-              size="14px"
-              to="/sign-up"
-            >
-              Sign Up
-            </Button>
+            <div className="hidden md:inline-block">
+              <Button
+                width="150px"
+                height="46px"
+                padding="12px 30px"
+                size="14px"
+                to="/sign-up"
+              >
+                Sign Up
+              </Button>
+            </div>
           ) : (
             <div className="dashboard-block">
               <div className="dashboard-info px-5 py-2 border border-secondary rounded-[8px]">

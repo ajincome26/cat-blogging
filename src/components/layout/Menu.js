@@ -13,7 +13,7 @@ const Menu = () => {
 
   return (
     <div
-      className={`menu w-2/3 h-[150px] bg-slate-100 absolute top-[104px] right-0 shadow-lg transition-all z-10 ${
+      className={`menu w-2/3 h-[150px] bg-slate-100 absolute top-[88px] right-0 shadow-lg transition-all items-center flex justify-center z-10 ${
         showOption ? "" : "translate-x-[100%]"
       }`}
     >

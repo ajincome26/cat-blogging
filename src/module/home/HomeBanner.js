@@ -5,7 +5,7 @@ import styled from "styled-components";
 const HomeBannerStyle = styled.div`
   .banner {
     margin-top: 20px;
-    padding: 40px;
+    padding: 10px;
     color: white;
     background-image: linear-gradient(
       to right bottom,
@@ -13,7 +13,9 @@ const HomeBannerStyle = styled.div`
       ${(props) => props.theme.secondary}
     );
     display: flex;
-    gap: 4rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
     &-left,
     &-right {
       height: 520px;
@@ -31,40 +33,39 @@ const HomeBannerStyle = styled.div`
     &-content {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 5px;
       margin-bottom: 30px;
     }
     &-title {
       letter-spacing: 2px;
-      font-size: 40px;
+      font-size: 25px;
     }
     &-desc {
       font-weight: 200;
       margin-bottom: 10px;
       line-height: 1.75;
+      margin-bottom: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
     }
   }
   @media only screen and (min-width: 375px) {
     .banner {
-      flex-direction: column;
+      padding: 40px;
       gap: 1rem;
-      &-content {
-        text-align: center;
-        gap: 1rem;
+      &-title {
+        letter-spacing: 2px;
+        font-size: 40px;
       }
-      &-desc {
-        margin-bottom: 0;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: break-word;
+      &-content {
+        gap: 1rem;
       }
     }
     .button {
-      margin-left: auto;
-      margin-right: auto;
       margin-bottom: 10px;
     }
   }

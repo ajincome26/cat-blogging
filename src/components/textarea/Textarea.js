@@ -6,6 +6,7 @@ const TextareaStyle = styled.div`
   width: 100%;
   position: relative;
   textarea {
+    outline: none;
     resize: none;
     min-height: 110px;
     padding: ${(props) => (props.hasIcon ? "12px 40px 12px 12px" : "12px")};

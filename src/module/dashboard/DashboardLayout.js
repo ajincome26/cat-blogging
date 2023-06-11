@@ -12,7 +12,7 @@ const DashboardLayoutStyle = styled.div`
   min-height: 100vh;
   .dashboard {
     &-content {
-      display: flex;
+      display: block;
     }
   }
   @media (min-width: 375px) {
@@ -46,7 +46,7 @@ const DashboardLayout = () => {
       <DashboardHeader />
       <div className="dashboard-content">
         <Sidebar />
-        <div className="w-full overflow-x-auto md:py-7 md:px-3 xl:p-5 min-[375px]:p-5">
+        <div className="w-full p-5 overflow-x-auto md:py-7 md:px-3 xl:p-5">
           <Outlet />
         </div>
       </div>

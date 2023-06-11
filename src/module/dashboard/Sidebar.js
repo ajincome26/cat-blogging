@@ -65,13 +65,18 @@ const SidebarStyle = styled.div`
       font-weight: 600;
     }
     &-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
       margin-top: 2rem;
     }
     &-item {
       display: flex;
       align-items: center;
       gap: 15px;
-      padding: 1rem 2rem;
+      padding: 1rem;
       cursor: pointer;
       font-size: 18px;
       font-weight: 500;
@@ -96,15 +101,8 @@ const SidebarStyle = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      }
-      &-content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
       }
       &-item {
         padding: 1rem;
@@ -128,9 +126,6 @@ const SidebarStyle = styled.div`
         justify-content: center;
         gap: 15px;
       }
-      &-item {
-        padding: 1rem;
-      }
     }
   }
   @media (min-width: 1280px) {
@@ -142,9 +137,6 @@ const SidebarStyle = styled.div`
       &-content {
         display: block;
         gap: 15px;
-      }
-      &-item {
-        padding: 1rem;
       }
     }
   }

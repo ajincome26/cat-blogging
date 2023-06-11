@@ -6,6 +6,7 @@ const InputStyle = styled.div`
   width: 100%;
   position: relative;
   input {
+    outline: none;
     padding: ${(props) => (props.hasIcon ? "12px 40px 12px 12px" : "12px")};
     border-radius: 8px;
     border: 1px solid transparent;

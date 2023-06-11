@@ -88,7 +88,7 @@ const CategoryAddNew = () => {
         {/* Status */}
         <Field>
           <Label>Status</Label>
-          <div className="flex items-center gap-10">
+          <div className="flex flex-wrap items-center gap-10">
             <Radio
               control={control}
               name="status"

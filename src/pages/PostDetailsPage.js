@@ -63,7 +63,7 @@ const PostDetailsPage = () => {
   return (
     <>
       <div className="container">
-        <div className="flex items-center gap-10 mb-14 min-[375px]:flex-col md:flex-row">
+        <div className="flex flex-col items-center gap-10 mb-14 md:flex-row">
           <div className="h-[450px] overflow-hidden rounded-2xl basis-1/2">
             <img src={post.url} alt="" className="object-cover w-full h-full" />
           </div>
@@ -114,7 +114,7 @@ const PostDetailsPage = () => {
       {postsRelated.length > 0 && (
         <div className="container">
           <div className="text-2xl font-bold text-primary">Post Related</div>
-          <div className="grid grid-cols-2 gap-5 mt-10 mb-5 md:grid md:grid-cols-3 lg:grid-cols-4 min-[375px]:block">
+          <div className="grid grid-cols-1 gap-5 mt-10 mb-5 md:grid md:grid-cols-3 lg:grid-cols-4 min-[500px]:grid-cols-2">
             {postsRelated.length > 0 &&
               postsRelated.map((item) => (
                 <PostRelatedItem key={item.title} post={item} />

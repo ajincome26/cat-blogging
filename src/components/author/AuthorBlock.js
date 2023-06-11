@@ -16,8 +16,8 @@ const AuthorBlock = ({ userId }) => {
   }, [userId]);
   if (!userId) return null;
   return (
-    <div className="flex items-center max-w-3xl mx-auto overflow-hidden rounded-2xl author bg-gray">
-      <div className="basis-1/3 h-[250px] rounded-2xl overflow-hidden">
+    <div className="min-[375px]:flex items-center max-w-3xl mx-auto overflow-hidden rounded-2xl author bg-gray">
+      <div className="basis-1/3 h-[200px] min-[375px]:h-[250px] rounded-2xl overflow-hidden">
         <img src={user?.avatar} alt="" className="object-cover w-full h-full" />
       </div>
       <div className="flex flex-col gap-5 p-5 basis-2/3">

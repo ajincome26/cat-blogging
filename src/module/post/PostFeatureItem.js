@@ -22,10 +22,20 @@ const PostFeatureItemStyle = styled.div`
     }
     &-header {
       display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       align-items: center;
       justify-content: space-between;
       font-size: 14px;
       margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (min-width: 375px) {
+    .feature {
+      &-header {
+        flex-wrap: nowrap;
+        gap: 0;
+      }
     }
   }
 `;
