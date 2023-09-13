@@ -26,8 +26,7 @@ import {
 import { UserAddNew, UserManage } from "module/user";
 import UserUpdate from "module/user/UserUpdate";
 import { PostManage, PostUpdate } from "module/post";
-import { Suspense } from "react";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 
 const DashboardLayout = lazy(() => import("module/dashboard/DashboardLayout"));
 
